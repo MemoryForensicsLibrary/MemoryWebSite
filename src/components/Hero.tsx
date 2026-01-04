@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/LogoBrancaSemFundoAzul.png";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
             <img
               src={logo}
               alt="Memory Forensics Library"
-              className="h-24 w-24 md:h-32 md:w-32 mx-auto rounded-lg shadow-lg"
+              className="h-24 w-24 md:h-32 md:w-32 mx-auto mb-8 block"
             />
           </div>
           
@@ -37,7 +37,7 @@ const Hero = () => {
               Get Started
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/MemoryForensicsLibrary"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero-outline"
