@@ -1,6 +1,6 @@
 import { useState } from "react";
-import libImg from "@/assets/LogoBrancaSemFundoAzul.png";
-import botImg from "@/assets/LogoMemoryCorInvertida.png";
+import libImg from "@/assets/LogoMemoryCorInvertida.png";
+import botImg from "@/assets/MemoryWithTrophie.png";
 import otherImg from "@/assets/logo.jpg";
 
 const images = [libImg, botImg, otherImg];
