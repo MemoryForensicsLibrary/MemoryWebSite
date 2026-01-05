@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HowItWorks from "@/components/HowItWorks";
 import WhoIsThisFor from "@/components/WhoIsThisFor";
 import Community from "@/components/Community";
+import CleanerAgent from "@/components/CleanerAgent";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
         <About />
         <HowItWorks />
         <WhoIsThisFor />
+        <CleanerAgent />
         <Community />
       </main>
       <Footer />
