@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import LibraryInfo from "@/components/LibraryInfo";
 import Footer from "@/components/Footer";
+import HowItWorks from "@/components/HowItWorks";
+import WhoIsThisFor from "@/components/WhoIsThisFor";
+import Community from "@/components/Community";
 
 const Index = () => {
   return (
@@ -11,7 +13,9 @@ const Index = () => {
       <main className="flex-1">
         <Hero />
         <About />
-        <LibraryInfo />
+        <HowItWorks />
+        <WhoIsThisFor />
+        <Community />
       </main>
       <Footer />
     </div>
