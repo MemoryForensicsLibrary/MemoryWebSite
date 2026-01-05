@@ -23,28 +23,46 @@ const WhoIsThisFor = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-28 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
-            Who is this for?
-          </h2>
+        <div className="max-w-6xl mx-auto">
+          
+          {/* BIG BLUE CARD */}
+          <div
+            className="
+              rounded-3xl
+              px-12 py-16
+              shadow-xl
+            "
+            style={{
+              backgroundColor: "rgba(36, 150, 237, 0.08)",
+              border: "1px solid rgba(36, 150, 237, 0.35)",
+              boxShadow: "0 20px 60px rgba(36, 150, 237, 0.15)",
+            }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-14">
+              Who is this for?
+            </h2>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            {targets.map((item, index) => (
-              <div
-                key={index}
-                className="border-l-2 border-primary pl-6"
-              >
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+            <div className="grid gap-10 md:grid-cols-2">
+              {targets.map((item, index) => (
+                <div
+                  key={index}
+                  className="border-l-2 pl-6"
+                  style={{ borderColor: "#2496ED" }}
+                >
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
+          {/* END BIG BLUE CARD */}
+
         </div>
       </div>
     </section>

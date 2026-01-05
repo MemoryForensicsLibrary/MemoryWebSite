@@ -1,13 +1,6 @@
-import { useState } from "react";
 import libImg from "@/assets/LogoMemoryCorInvertida.png";
-import botImg from "@/assets/MemoryWithTrophie.png";
-import otherImg from "@/assets/logo.jpg";
-
-const images = [libImg, botImg, otherImg];
 
 const About = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -42,31 +35,13 @@ const About = () => {
             </div>
           </div>
 
-          {/* RIGHT — CAROUSEL (IMAGES ONLY) */}
-          <div>
-            <div className="overflow-hidden">
-              <img
-                src={images[activeIndex]}
-                alt="Project preview"
-                className="w-full h-[320px] object-contain transition-opacity duration-300"
-              />
-            </div>
-
-            {/* Dots */}
-            <div className="flex justify-center gap-3 mt-4">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveIndex(index)}
-                  className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                    index === activeIndex
-                      ? "bg-primary"
-                      : "bg-muted-foreground/40 hover:bg-muted-foreground"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
+          {/* RIGHT — IMAGE */}
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src={libImg}
+              alt="Memory Forensics Library logo"
+              className="w-full max-w-md h-auto object-contain"
+            />
           </div>
 
         </div>
