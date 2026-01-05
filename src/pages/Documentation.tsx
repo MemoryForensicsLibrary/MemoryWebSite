@@ -196,20 +196,29 @@ const Documentation = () => {
                     and analysis. This guide will help you get up and running quickly.
                   </p>
 
-                  <div id="installation" className="scroll-mt-24">
-                    <h3 className="text-xl font-semibold text-foreground mt-8 mb-4">Installation</h3>
-                    <p className="text-muted-foreground mb-4">
-                      Clone the repository and build from source:
-                    </p>
-                    <pre className="bg-secondary p-4 rounded-lg overflow-x-auto mb-6">
-                      <code className="text-sm font-mono text-secondary-foreground">
-{`git clone https://github.com/your-repo/memory-forensics-lib.git
-cd memory-forensics-lib
-make
-sudo make install`}
-                      </code>
-                    </pre>
-                  </div>
+                <div id="installation" className="scroll-mt-24">
+                  <h3 className="text-xl font-semibold text-foreground mt-8 mb-4">
+                    Installation
+                  </h3>
+
+                  <p className="text-muted-foreground mb-4">
+                    Clone the official repository and build the library from source:
+                  </p>
+
+                  <pre className="bg-secondary p-4 rounded-lg overflow-x-auto mb-6">
+                    <code className="text-sm font-mono text-secondary-foreground">
+                {`git clone https://github.com/MemoryForensicsLibrary/MemoryForensics.git
+                cd MemoryForensics
+                make
+                sudo make install`}
+                    </code>
+                  </pre>
+
+                  <p className="text-muted-foreground text-sm">
+                    This will build the library and install the headers and shared objects
+                    system-wide.
+                  </p>
+                </div>
 
                   <div id="requirements" className="scroll-mt-24">
                     <h3 className="text-xl font-semibold text-foreground mt-8 mb-4">Requirements</h3>
